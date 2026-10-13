@@ -1,0 +1,19 @@
+name: first workflow
+
+on:
+  push:
+    branches:
+       - main
+
+jobs:
+  first-job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: print hello
+          run: echo "hello world"
+        - name:  check github hosted runner info
+          run: |
+             echo "this runner is hosted by github"background: "
+             whoami
+             pwd
+             date
