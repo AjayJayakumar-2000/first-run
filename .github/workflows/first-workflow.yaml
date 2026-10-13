@@ -13,7 +13,7 @@ jobs:
           run: echo "hello world"
         - name:  check github hosted runner info
           run: |
-             echo "this runner is hosted by github"background: "
+             echo "this runner is hosted by github"
              whoami
              pwd
              date
